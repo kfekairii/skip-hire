@@ -65,18 +65,14 @@ export default function Home() {
           <div className="absolute top-4 right-0">
             <ModeToggle />
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+          <div>
             <h1 className="text-4xl font-bold text-foreground mb-4">
               Skip Hire
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Follow our simple 6-step process to book your skip hire service.
             </p>
-          </motion.div>
+          </div>
         </div>
 
         <MultiStepProgressBar currentStep={3} />
